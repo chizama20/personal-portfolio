@@ -16,14 +16,7 @@ int main(){
     int selector;
     float celcius, fahrenheit, kelvin;
 
-    cout<< "Welcome to a tempature converter"<<endl;
-    cout<<"1. fahrenheit to celcius\n";
-        <<"2. celcius to farenhiet\n";
-        <<"3. fahrenheit to kelvin\n";
-        <<"4. kelvin to fahrenheit\n";
-        <<"5. celcius to kelvin\n";
-        <<"6. kelvin to celcius\n";
-        <<"Choose what you want to convert to: ";
+    cout<< "Welcome to a tempature converter"<<endl <<"1. Fahrenheit to Celcius\n"<<"2. Celcius to Farenhiet\n"<<"3. Fahrenheit to Kelvin\n"<<"4. Kelvin to Fahrenheit\n"<<"5. Celcius to Kelvin\n"<<"6. Kelvin to Celcius\n"<<"Choose what you want to convert to: ";
     
     cin >> selector;
     switch(selector){
@@ -44,7 +37,7 @@ int main(){
         cout<< "Enter Fahrenheit: ";
         cin>> fahrenheit;
          
-        cout<< "Celcius is: "<< fahrenheittokelvin(fahrenheit)<<endl;
+        cout<< "Kelvin is: "<< fahrenheittokelvin(fahrenheit)<<endl;
         break;
         
         case 4:
@@ -75,19 +68,19 @@ int main(){
     
     return 0;
 }
-float fahrenheittocelcius(float celcius){
-    return (5/9* celcius)- 32;
+float fahrenheittocelcius(float fahrenheit){
+    return (5/9* fahrenheit) - 32;
 }
 
-float celciustofahrenheit(float fahrenheit){
-    return (fahrenheit * 9/5) + 32;
+float celciustofahrenheit(float celcius){
+    return (celcius * 9/5) + 32;
 }
 
 float fahrenheittokelvin(float fahrenheit){
     return (fahrenheit - 32)/ 1.8 + 273;
 }
 float kelvintofahrenheit(float kelvin){
-    return (kelvin - 273)*1.8 + 32;
+    return (9.0/5) * (kelvin - 273.15) + 32;
 }
 
 float celciustokelvin(float celcius){
