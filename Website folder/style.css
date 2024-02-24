@@ -14,7 +14,7 @@ body{
 #header{
   width: 100%;
   height: 100vh;
-  background-image: ;/* Add main background image here, prolly like a professional photo */
+  background-image: none; /* Add main background image here, prolly like a professional photo */
   background-size: cover;
   background-position: center;
 }
@@ -149,3 +149,4 @@ nav ul li a::after{
   flex-basis: 60%;
   margin-right: 20px;
 }
+/* ------------------- done -------------------*/
