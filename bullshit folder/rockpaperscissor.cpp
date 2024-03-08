@@ -25,7 +25,7 @@ int winnerDeterminate(int player, int randomNumber, int rock, int paper, int sci
     paper = 2;
     scissor = 3;
 
-    if(player = randomNumber){
+    if(player == randomNumber){
         cout<<"It's a tie";
     }
     else if((player == 1 && randomNumber == 2) || (player == 2 && randomNumber == 3) || (player == 3 && randomNumber == 1)){
