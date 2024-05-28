@@ -7,14 +7,14 @@
 }
 
 body{
-  background: rgba(0, 0, 0, 0.6);
+  background: black;
   color: white;
 }
 
 #header{
   width: 100%;
   height: 100vh;
-  background-image: none; /* Add main background image here, prolly like a professional photo */
+  background-image: ;/* Add main background image here, prolly like a professional photo */
   background-size: cover;
   background-position: center;
 }
@@ -96,7 +96,7 @@ nav ul li a::after{
 .layer{
   width: 100%;
   height: 0;
-  background: linear-gradient(rgba(0,0,0,0.6), rgb(102, 101, 101));
+  background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
   border-radius: 10px;
   position: absolute;
   left: 0;
@@ -140,71 +140,19 @@ nav ul li a::after{
 }
 
 /* ------------------- Contact -------------------*/
-.row{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
-}
-
-.contact-info{
-  flex-basis: 60%;
-  margin-right: 20px;
+.contact-left{
+  flex-basis: 35%;
   max-width: 500px;
-  line-height: 50px;
-
+  line-height: 65px;
+  padding-left: 50px;
+  font-size: 18px;
 }
-
-.contact-info h1{
-  font-size: 35px;
-  margin-bottom: 30px;
-}
-
-.contact-form{
-  max-width: 700px;
+..contact-left{
+  flex-basis: 60%; 
   margin-right: 50px;
 
 }
-
-.contact-form, .contact-info{
+.contact-left, .contact-right{
   flex: 1;
 }
-.contact-form .text-box{
-  background-color: rgb(102, 101, 101);
-  border: none;
-  width: calc(50% - 10px);
-  height: 50px;
-  padding: 12px;
-  font-size: 15px;
-  border-radius: 5px;
-}
-.contact-form .text-box{
-  background-color: rgb(102, 101, 101);
-  border: none;
-  width: calc(50% - 10px);
-  height: 50px;
-  padding: 12px;
-  font-size: 15px;
-  border-radius: 5px;
-  margin-bottom: 20px;
-}
-.contact-form .text-box:first-child{
-  margin-right: 15px;
-}
-
-.contact-form .textarea{
-  background-color: rgb(102, 101, 101);
-  border: none;
-  width: calc(50% - 10px);
-  height: 50px;
-  padding: 12px;
-  font-size: 15px;
-  border-radius: 5px;
-  margin-bottom: 20px;
-  min-height: 200px;
-  max-height: 400px;
-  resize: vertical;
-  margin-top: 20px;
-}
-/* ------------------- done -------------------*/
