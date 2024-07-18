@@ -1,20 +1,10 @@
-/*==========================================================
 
- Title:     Assignment 12 - C++ Wizard Creature Department
- Course:  	CSC 1100
- Author:  	<First & Last Name>
- Date:    	< / / >
- Description: This program ....
-
- ==========================================================
-*/
 
 #include <iostream>
 #include <string>
 
 using namespace std;
 
-//Write classes here...
 class Creature{
     protected:
         string name;
@@ -79,11 +69,9 @@ public:
 
 int main()
 {
-	//create empty array of size 3 for storing name
     string nameArr[3];
     string name;
-	// Write loop here to record user input as names
-    // and set third name to “Clover”
+	
     for(int i = 0; i < 3; ++i){
         cin >> name;
         nameArr[i] = name;
@@ -94,21 +82,16 @@ int main()
     
 
 	Creature c(nameArr[0], 2);
-	//print statement from class
 	c.printStatement();
 
 	Phoenix p;
-	//sets name, quantity and color
 	p.setName(nameArr[1]);
 	p.setQuantity(3);
 	p.setColor("golden");
-    //print statement from class
 	p.printStatement();
 
 	Basilisk b;
-    //sets name
 	b.setName(nameArr[2]);
-    //prints statement from class
 	b.printStatement();
 
     
