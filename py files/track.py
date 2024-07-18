@@ -1,14 +1,11 @@
 import cv2
 import numpy as np
 
-# Define the color range for detecting the basketball
 lower_color = np.array([0, 120, 70])
 upper_color = np.array([10, 255, 255])
 
-cap = cv2.VideoCapture(0)  # Adjust camera index if needed
-
+cap = cv2.VideoCapture(0)  
 def is_ball_in_hoop(x, y, w, h):
-    # Define the region for the hoop (this will vary based on your setup)
     hoop_x, hoop_y, hoop_w, hoop_h = 300, 200, 100, 100
     return (x > hoop_x and x + w < hoop_x + hoop_w and
             y > hoop_y and y + h < hoop_y + hoop_h)
@@ -21,7 +18,7 @@ while True:
     
     for contour in contours:
         area = cv2.contourArea(contour)
-        if area > 500:  # Adjust this value based on the size of the ball
+        if area > 500:  
             x, y, w, h = cv2.boundingRect(contour)
             cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 2)
             
